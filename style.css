@@ -1,10 +1,20 @@
+#hero {
+  height: 90vh;
+  background: linear-gradient(to right, #2e7d32, #4caf50);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#hero h1, #hero p { color: #fff; }
+
 #hero a.btn {
-  background-color: #2e7d32; /* dark green */
+  background-color: #2e7d32;
   color: #fff;
   border: none;
 }
 
 #hero a.btn:hover {
-  background-color: #1b5e20; /* darker green on hover */
+  background-color: #1b5e20;
   color: #fff;
 }
