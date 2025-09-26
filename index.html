@@ -13,8 +13,19 @@
       height: 90vh;
       background: linear-gradient(to right, #2e7d32, #4caf50);
       color: #fff;
+      display: flex;
+      align-items: center;
     }
     #hero h1, #hero p { color: #fff; }
+    #hero a.btn {
+      background-color: #2e7d32;
+      color: #fff;
+      border: none;
+    }
+    #hero a.btn:hover {
+      background-color: #1b5e20;
+      color: #fff;
+    }
     .card {
       border: none;
       background: #e8f5e9;
@@ -45,11 +56,21 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="d-flex align-items-center justify-content-center text-center" id="hero">
+  <section class="text-white" id="hero">
     <div class="container">
-      <h1 class="display-4 fw-bold">DevOps Engineer</h1>
-      <p class="lead">7+ years in Cloud, CI/CD, and DevOps Automation</p>
-      <a href="#contact" class="btn btn-light btn-lg">Contact Me</a>
+      <div class="row align-items-center">
+        <!-- Left: Text -->
+        <div class="col-md-7 text-center text-md-start">
+          <h1 class="display-4 fw-bold">DevOps Engineer</h1>
+          <p class="lead">7+ years of experience in Cloud, CI/CD, and DevOps automation</p>
+          <a href="#contact" class="btn btn-lg mt-3">Contact Me</a>
+        </div>
+        <!-- Right: Profile Picture -->
+        <div class="col-md-5 text-center mt-4 mt-md-0">
+          <img src="pic01.png" alt="Laxmikant Swain" 
+               class="img-fluid rounded-circle shadow-lg" style="max-width: 250px;">
+        </div>
+      </div>
     </div>
   </section>
 
