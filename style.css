@@ -1,10 +1,10 @@
-/* Custom Styles on top of Bootstrap */
-#hero {
-  height: 90vh;
-  background: linear-gradient(to right, #2e7d32, #4caf50);
-}
-#hero h1, #hero p { color: #fff; }
-.card {
+#hero a.btn {
+  background-color: #2e7d32; /* dark green */
+  color: #fff;
   border: none;
-  background: #e8f5e9;
+}
+
+#hero a.btn:hover {
+  background-color: #1b5e20; /* darker green on hover */
+  color: #fff;
 }
