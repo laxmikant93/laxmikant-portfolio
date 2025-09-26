@@ -1,12 +1,27 @@
 #hero {
-  height: 90vh;
-  background: linear-gradient(to right, #2e7d32, #4caf50);
-  color: #fff;
+  height: 100vh;
   display: flex;
   align-items: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  
+  /* Animated Gradient */
+  background: linear-gradient(-45deg, #2e7d32, #4caf50, #66bb6a, #1b5e20);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
 }
 
-#hero h1, #hero p { color: #fff; }
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#hero h1, 
+#hero p {
+  color: #fff;
+}
 
 #hero a.btn {
   background-color: #2e7d32;
@@ -18,3 +33,4 @@
   background-color: #1b5e20;
   color: #fff;
 }
+
